@@ -6,11 +6,11 @@
         </TabButton>
 */
 
-function TabButton({ chileren, onSelect, isSelected }) {
+function TabButton({ children, onSelect, isSelected }) {
   return (
     <li>
       <button className={isSelected ? "active" : undefined} onClick={onSelect}>
-        {chileren}
+        {children}
       </button>
     </li>
   );
